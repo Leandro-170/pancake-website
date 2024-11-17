@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>pancake tutorial true!!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            image-rendering: pixelated;
+            width: min-content;
+            height: min-content;
+        }
+
+        .side {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        #hole {
+            height: 100vh;
+            background-color: #010101;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }   
+
+        #top {
+            width: 100%;
+            height: 128px;
+        }
+
+        .opposite img {
+            transform: scaleX(-1);
+        }
+
+        #ichigo-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="side">
+            <img src="corner.png">
+            <img src="line.png">
+        </div>
+        <div id="ichigo-div">
+            <img src="top.png" id="top">
+            <div style="display: flex;">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <a href="yltg.html"><img src="yltg.png" alt=""></a>
+                    <img src="pancake.png" alt="">
+                    <img src="tsukurikata.png" alt="">
+                </div>
+                <img src="ichigo-tower.png">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div style="display: flex; align-items: center;">
+                        <a href="jam.html"><img src="jam-senoku.png" alt=""></a>
+                        <img src="jam-hitsuyou.png" alt="">
+                    </div>
+                    <img src="yama.png" style="margin: 10px;" alt="">
+                    <a href="kusuri.html"><img src="kusuri.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="side opposite">
+            <img src="corner.png">
+            <img src="line.png">
+        </div>
+    </main>
+    <div
+    style="height: 100vh;background: linear-gradient(to bottom, white, #010101);
+"></div>
+    <div id="hole">
+        <img src="fake.png" alt="" id="fake" style="width: 300px;">
+        <img src="frummy.gif" style="width: 300px; display: none;" id="frummy">
+        <audio src="nothing.ogg" id="nothing"></audio>
+    </div>
+    <script>
+        const frummy = document.getElementById("frummy")
+        const fake = document.getElementById("fake")
+        const nothing = document.getElementById("nothing")
+        nothing.volume = 0.5
+        nothing.loop = true
+        fake.addEventListener('click', () => {
+            fake.style = "display: none"
+            frummy.style = "display: default; width: 300px"
+            nothing.play();
+        })
+    </script>
+</body>
+
+</html>

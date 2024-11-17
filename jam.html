@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>パンケーキの使い方！</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'UD Digi Kyokasho N-R', 'MS Gothic', sans-serif;
+            min-width: max-content;
+            position: absolute;
+            inset: 0px;
+            min-height: 100vh;
+        }
+
+        header p {
+            background-color: darkgray;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 35px;
+            display: flex;
+            justify-content: flex-start;
+            padding: 10px;
+            width: 100%;
+        }
+
+        header {
+            background-color: lightgray;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+        }
+
+        #chuui {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            gap: 12px;
+            justify-content: center;
+            background-color: lightcoral;
+            font-size: 21px;
+        }
+
+        #chuui img {
+            scale: 2;
+            image-rendering: pixelated;
+        }
+
+        .banner {
+            width: 100%;
+            padding: 35px;
+            font-weight: bolder;
+            font-size: 25px;
+            display: flex;
+            height: 100%;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #jambn {
+            background-image: url("banner.png");
+            background-size: contain;
+            clip-path: polygon(0 0, 100% 0%, 75% 100%, 0 100%);
+        }
+        #jambn a {
+            font-size: 48px;
+        }
+        #panbn {
+            text-align: right;
+            background-color: rgb(255, 213, 162);
+            margin: 0;
+            clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0 100%);
+            gap: 10px;
+        }
+        #panbn img {
+            width: 100px;
+        }
+
+        #recipe {
+            margin: 10px;
+            display: flex;
+            word-wrap: normal;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid lightblue;
+            padding: 10px;
+            width: auto;
+            max-width: fit-content;
+        }
+
+        #stupid {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        footer {
+            background-color: lightblue;
+            display: flex;
+            justify-content: flex-start;
+            padding: 30px;
+            gap: 30px;
+            width: 100%;
+        }
+        footer * {
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        #more {
+            padding: 14px;
+            margin: 10px;
+            border: 4px solid black;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        #more img {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>バカのレシピ！</p>
+    </header>
+        <div id="chuui">
+            <img src="warning.png" alt="">
+            注意：このサイトはN4以上を知らないバカによって書かれた。不完全な日本語を予感して。
+        </div>
+    <main>
+        <p class="banner" id="jambn">一番おいしいジャム！<br>
+            <a href="jam.html" id="buy">購入</a>
+        </p>
+        <p class="banner" id="panbn">
+            <img src="pancake3d.png" alt="">
+            <b style="font-size: 18px;">とても小さいご購入になってから<br>
+                                        とても小さいパンケーキをもらう</p>
+        </p>
+    </main>
+    <div id="more">
+        <div>
+        <h1>宇宙で第一の毒がないジャム！</h1>
+        <p> この銀河系に、食べ物の生産する会社は破壊した地球から広がる料理のエネルギーを一致する能力を失った。<br>
+            何でもの試みも謎の地球で生きた難解な生物の元の意見を似なかった。<br>ほとんどに知ってないけど、我々に多いことを下さった生物... <br>
+            我々はその生物達の遺産を復興してお礼にする為に来る。<br>古い文書から読んだのは、<p style="font-family: 'MS Mincho'; font-size: 28px;">「日の第一の段は、朝<b style="font-family: sans-serif;font-size: 12px;">(あさ)</b>ごはんを食べることです。」</p>
+            最も大事な料理を食事しに来よう。 <br>
+        </p>
+        </div>
+        <img src="jam3d.png" alt="ジャム">
+    </div>
+    <footer>
+        <a href="index.html">もっとレシピを見る</a> 
+        <a href="notfound.html">僕を訴えたいの？ここにクリックして！</a>
+    </footer>
+</body>
+
+</html>

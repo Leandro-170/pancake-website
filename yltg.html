@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>MEDICINE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header {
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 35px;
+        }
+
+        body {
+            background-image: url("tbl.png");
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-size: 500px, contain;
+            padding: 100px;
+        }
+
+        div {
+            background-color: white;
+            color: black;
+            margin: 35px;
+            padding: 15px;
+            width: 500px;
+            margin: 0;
+            border-radius: 1px;
+            box-shadow: 5px 5px burlywood;
+        }
+
+        a {
+            padding: 25px;
+            width: max-content;
+        }
+
+        #losing {
+            transform: translateX(-25%);
+            rotate: 5deg;
+        }
+
+        #pws {
+            transform: translate(20%, -25%);
+            rotate: -2deg;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: color-mix(in srgb, lightblue 50%, white 50%);
+            overflow: hidden;
+        }
+
+        #sign {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        #remedyinfo {
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-top: 5px;
+            padding-top: 10px;
+            border-top: lightblue solid 2px;
+        }
+
+        #warning1 {
+            rotate: 1deg;
+            background-color: color-mix(in srgb, darksalmon 50%, white 50%);
+            padding: 5px;
+            clip-path: polygon(3% 0, 95% 1%, 100% 16%, 94% 43%, 100% 100%, 0 100%, 4% 80%, 0 39%);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #warning2 {
+            background-color: color-mix(in srgb, darksalmon 50%, white 50%);
+            padding: 12px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 22px;
+            clip-path: polygon(3% 0, 95% 5%, 100% 10%, 94% 03%, 100% 88%, 0 80%, 0% 80%, 0 39%);
+        }
+
+        #medicine {
+            width: 250px;
+            margin: 0;
+            padding: 5;
+            overflow: hidden;
+            transform: perspective(75em) rotatey(-6deg);
+            height: 280px;
+        }
+
+        #medicine_side {
+            width: min-content;
+            height: 280px;
+            transform: perspective(75em) rotatey(76deg) translateZ(-50px) translateX(23px);
+            background-color: color-mix(in srgb, white 90%, gray 10%);
+        }
+
+        #donotuse {
+            transform: translate(-40%, -80%);
+        }
+
+        #losing {
+            display: flex;
+        }
+
+        #pills {
+            width: min-content;
+            background-color: rgba(0, 0, 0, 0);
+            box-shadow: none;
+        }
+
+        .pill {
+            position: absolute;
+            overflow: hidden;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 2px 2px gray;
+        }
+
+        .pill::before, .pill::after {
+            position: absolute;
+            content: '';
+            background: gray;
+            display: block;
+            width: 3px;
+            height: 50px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .pill::after {
+            transform: rotate(-90deg)
+        }
+    </style>
+</head>
+
+<body>
+    <div id="losing">
+        <main>
+            I am a doctor from planet X23 dedicated and created for the sake of telepathic, mental and psychological
+            treatment. Currently, my planet and it's neighbors suffer from a severe lack of treatment for it's citizens.
+            This is why I hate you.
+            I can't give you the reason as to why you're like this now. Why you're doing this. Who's going to see it?
+            Who would ever see the huge planet, vulnerable up in space with little conditions, even with it's own
+            doctors? <br>
+            <h1>I would.</h1>
+            In fact, I do. I'm looking at it right now. I can't be there right now, though. What happens to my people,
+            then? You see nothing of it.<br>
+            You are living a lie. This is why you lost the game. This isolation would make anyone starve. Not of food,
+            but of thoughts, of consideration. <br>
+            <p id="sign">- Doctor John</p>
+        </main>
+    </div>
+    <div id="pws">
+        <header>
+            <p>Planet-wide support</p>
+        </header>
+        <main>
+            Come to my office. I'll make you lose it. I have all the medicine in the world, and in other worlds, too!
+            Help me support my home planet. Exclusive operation for humans, cats, dogs, robots, dragons... Anyone who
+            could use medicine.<br>
+            <b>Contact me. Or die without trying.</b>
+            <h2>Present at an office <br>near ███, Island 3, Hotel 8.</h2>
+        </main>
+    </div>
+    <div style="display: flex; background: none; box-shadow: none;" id="donotuse">
+        <div id="medicine">
+            <header id="warning1">
+                PROTOTYPE
+            </header>
+            <main id="remedyinfo">
+                REMEDY MADE FOR THE SICK AND TIRED <br>
+                <b id="warning2">DO NOT USE</b> <br> <br>
+                Made for people who need a break. Especially the professionals, who get other people their breaks.
+                Everyone needs one, even you. <br> <br>
+                Contains lots of chemicals you shouldn't take separately.
+            </main>
+        </div>
+        <div id="medicine_side">
+            Do not use. <br>
+            ||||||||||||||||||||||||||||
+            You will not see the end of this. You will not see the end of this. You will not see the end of this. You
+            will not see the end of this. You will not see the end of this.
+        </div>
+        <div id="pills" style="transform: translate(-100%, 75%);">
+            <div class="pill" style="transform: translate(-95%, 55%); rotate: 5deg;"></div>
+            <div class="pill"style="transform: translate(12%, 5%); rotate: -5deg;"></div>
+            <div class="pill"style="transform: translate(-35%, -105%); rotate: 2deg;"></div>
+            <div class="pill"style="transform: translate(127%, 25%); rotate: 7deg;"></div>
+        </div>
+    <div href="index.html"
+        style="background: white; text-decoration: none; color: black; height: min-content; transform: translate(100%, 500%); position: absolute; left: 1; right: 0; width: min-content; rotate: -2deg;"><a href="index.html">RETURN</a></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>not found</title>
+    <style>
+        #warning {
+            display: none;
+        }
+        #nisemono:hover #warning {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        #nisemono:hover #notfound {
+            display: none;
+        }
+        * {
+            margin: 0;
+            padding: 0;}
+    </style>
+</head>
+<body>
+    <div id="nisemono">
+        <p id="notfound">Page not found!</p>
+        <p id="warning">You will not see the end of this.</p>
+    </div>
+</body>
+</html>
